@@ -1,0 +1,86 @@
+{
+    "name": "kadevland/laravel-easy-modules",
+    "version": "1.0.0",
+    "description": "Laravel module generator with extensive Artisan commands for rapid modular development. Customizable architecture patterns including Clean Architecture templates.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "laravel-package",
+        "laravel-modules",
+        "laravel-12",
+        "module-generator",
+        "modular",
+        "clean-architecture",
+        "artisan-commands",
+        "scaffolding",
+        "customizable",
+        "flexible",
+        "rapid-development",
+        "code-organization",
+        "developer-tools",
+        "php"
+    ],
+    "homepage": "https://github.com/kadevland/laravel-easy-modules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kadevland",
+            "email": "kadevland@kaosland.net",
+            "homepage": "https://kaosland.net",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kadevland/laravel-easy-modules/issues",
+        "source": "https://github.com/kadevland/laravel-easy-modules",
+        "docs": "https://github.com/kadevland/laravel-easy-modules#readme"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/kadevland"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0",
+        "illuminate/console": "^12.0",
+        "illuminate/filesystem": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kadevland\\EasyModules\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kadevland\\EasyModules\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "pint": "vendor/bin/pint",
+        "pint-test": "vendor/bin/pint --test"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kadevland\\EasyModules\\Providers\\EasyModulesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

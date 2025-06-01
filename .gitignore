@@ -1,0 +1,59 @@
+# Package Dependencies
+/vendor/
+composer.lock
+
+# PHP Testing
+/.phpunit.result.cache
+/.phpunit.cache
+/phpunit.xml
+
+# PHP Code Style
+/.php-cs-fixer.cache
+/.php-cs-fixer.php
+/php-cs-fixer.phar
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Build & Distribution
+/build/
+/dist/
+
+# Coverage Reports
+/coverage/
+/clover.xml
+/.coverage/
+
+# Laravel Specific
+.env
+.env.backup
+.env.production
+storage/
+bootstrap/cache/
+
+# Package Development
+/docs/_build/
+/.github/workflows/temp/
+/stubs/published/
+
+# Development Tools
+/.sail/
+docker-compose.override.yml
