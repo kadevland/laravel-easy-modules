@@ -1,0 +1,49 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+/**
+ * {{ class }} Mapper
+ *
+ * Maps between different representations of data for {{ module }} module.
+ * Handles transformation between layers (Entity <-> DTO <-> Array).
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+class {{ class }}
+{
+    /**
+     * Map entity to DTO
+     */
+    public function toDto(/* EntityType */ $entity): /* DtoType */
+    {
+        // Implementation here
+    }
+
+    /**
+     * Map DTO to entity
+     */
+    public function toEntity(/* DtoType */ $dto): /* EntityType */
+    {
+        // Implementation here
+    }
+
+    /**
+     * Map array to DTO
+     */
+    public function arrayToDto(array $data): /* DtoType */
+    {
+        // Implementation here
+    }
+
+    /**
+     * Map DTO to array
+     */
+    public function dtoToArray(/* DtoType */ $dto): array
+    {
+        // Implementation here
+    }
+}

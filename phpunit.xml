@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    cacheDirectory=".phpunit.cache"
+    stopOnFailure="false"
+    failOnRisky="true"
+    failOnWarning="true">
+
+    <!-- Source code for coverage analysis -->
+    <source>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <exclude>
+            <directory>./src/stubs</directory>
+            <file>./src/config/config.php</file>
+        </exclude>
+    </source>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+    </testsuites>
+    <!-- Environment settings -->
+    <php>
+        <!-- Laravel testing -->
+        <env name="APP_ENV" value="testing" />
+        <env name="APP_KEY" value="base64:VGhpcyBpcyBhIGZha2UgYXBwIGtleSBmb3IgdGVzdGluZw==" />
+        <env name="CACHE_DRIVER" value="array" />
+        <env name="DB_CONNECTION" value="sqlite" />
+        <env name="DB_DATABASE" value=":memory:" />
+        <env name="QUEUE_CONNECTION" value="sync" />
+        <env name="SESSION_DRIVER" value="array" />
+
+        <!-- EasyModules testing -->
+        <env name="EASYMODULES_AUTO_DISCOVER" value="false" />
+
+        <!-- PHP settings -->
+        <ini name="memory_limit" value="256M" />
+        <ini name="error_reporting" value="E_ALL" />
+    </php>
+</phpunit>

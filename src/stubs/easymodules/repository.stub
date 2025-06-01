@@ -1,0 +1,63 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use {{ entity_namespace }}\{{ repository_entity }};
+
+/**
+ * {{ class }} Repository Implementation
+ *
+ * Handles persistence operations for {{ repository_entity }} entities.
+ * This repository belongs to the {{ module }} module.
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+class {{ class }}
+{
+    /**
+     * Create a new repository instance
+     */
+    public function __construct(
+        // Inject model or database dependencies
+    ) {
+    }
+
+    /**
+     * Find entity by ID
+     */
+    public function findById(string $id): ?{{ repository_entity }}
+    {
+        // Implementation here
+        return null;
+    }
+
+    /**
+     * Save entity
+     */
+    public function save({{ repository_entity }} $entity): {{ repository_entity }}
+    {
+        // Implementation here
+        return $entity;
+    }
+
+    /**
+     * Delete entity
+     */
+    public function delete({{ repository_entity }} $entity): bool
+    {
+        // Implementation here
+        return false;
+    }
+
+    /**
+     * Find all entities
+     */
+    public function findAll(): array
+    {
+        // Implementation here
+        return [];
+    }
+}

@@ -1,0 +1,56 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+/**
+ * {{ class }} Data Transfer Object
+ *
+ * Transfers data between application layers for {{ module }} module.
+ * Immutable object that represents data structure.
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+readonly class {{ class }}
+{
+    /**
+     * Create a new DTO instance
+     */
+    public function __construct(
+        {{ dto_properties }}
+    ) {
+        // Add validation logic here if needed
+    }
+
+    /**
+     * Create from array
+     */
+    public static function fromArray(array $data): self
+    {
+        return new self(
+            // Map array data to constructor parameters
+        );
+    }
+
+    /**
+     * Convert to array
+     */
+    public function toArray(): array
+    {
+        return [
+            // Return all properties as array
+        ];
+    }
+
+    /**
+     * Validation rules for this DTO
+     */
+    public static function rules(): array
+    {
+        return [
+            {{ dto_rules }}
+        ];
+    }
+}

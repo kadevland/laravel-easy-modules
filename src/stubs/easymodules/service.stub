@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+/**
+ * {{ class }} Application Service
+ *
+ * Orchestrates {{ class }} use cases and coordinates between domain objects.
+ * This service belongs to the {{ module }} module.
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+class {{ class }}
+{
+    /**
+     * Create a new {{ class }} service
+     */
+    public function __construct(
+        // Inject dependencies here (repositories, other services, etc.)
+    ) {
+    }
+
+    /**
+     * handle the main service operation
+     */
+    public function handle(/* parameters */): mixed
+    {
+        // 1. Validate input
+        // 2. Apply business rules
+        // 3. Coordinate with domain objects
+        // 4. Return result
+        
+        return null;
+    }
+
+    /**
+     * Additional service methods
+     */
+}

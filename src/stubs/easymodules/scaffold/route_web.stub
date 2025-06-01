@@ -1,0 +1,11 @@
+<?php
+
+// use Illuminate\Support\Facades\Route;
+
+// Route::middleware([])->prefix('{{ scope_namespace }}')->group(function () {
+
+//     Route::get('/', function () {
+//         return '{{ scope_namespace }}';
+//     });
+
+// });

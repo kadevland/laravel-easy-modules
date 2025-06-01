@@ -1,0 +1,72 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use InvalidArgumentException;
+
+/**
+ * {{ class }} Value Object
+ *
+ * Immutable value object that represents {{ class }} concept.
+ * This value object belongs to the {{ module }} module.
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+readonly class {{ class }}
+{
+    /**
+     * Create a new value object instance
+     */
+    public function __construct(
+        private string $value // Adjust type as needed
+    ) {
+        $this->validate($value);
+    }
+
+    /**
+     * Validate the value
+     */
+    private function validate(string $value): void
+    {
+        if (empty($value)) {
+            throw new InvalidArgumentException('{{ class }} cannot be empty');
+        }
+
+        // Add more validation rules here
+    }
+
+    /**
+     * Get the value
+     */
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
+    /**
+     * Compare value objects for equality
+     */
+    public function equals(self $other): bool
+    {
+        return $this->value === $other->value;
+    }
+
+    /**
+     * Get string representation
+     */
+    public function toString(): string
+    {
+        return $this->value;
+    }
+
+    /**
+     * Convert to string
+     */
+    public function __toString(): string
+    {
+        return $this->toString();
+    }
+}

@@ -1,0 +1,45 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+/**
+ * {{ class }} Action
+ *
+ * Handles specific use case execution for {{ module }} module.
+ * Single responsibility action following CQRS pattern.
+ *
+ * @package {{ namespace }}
+ * @author Easy Module Generator
+ */
+class {{ class }}
+{
+    /**
+     * Create a new action instance
+     */
+    public function __construct(
+        // Inject required dependencies
+    ) {
+    }
+
+    /**
+     * Execute the action
+     */
+    public function execute(/* parameters */): mixed
+    {
+        // 1. Validate input
+        // 2. Execute business logic
+        // 3. Return result
+        
+        return null;
+    }
+
+    /**
+     * Handle the action (alias for execute)
+     */
+    public function handle(/* parameters */): mixed
+    {
+        return $this->execute(/* parameters */);
+    }
+}
